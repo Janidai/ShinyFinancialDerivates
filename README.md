@@ -8,7 +8,7 @@ Financial derivates are important instruments used for hedging or speculation or
 # Milestones
 - Dashboard Design
 - Write Theory
-- Build Payff and Profit Diagrams
+- Build Payoff and Profit Diagrams
 - Glossary
 - References
 
