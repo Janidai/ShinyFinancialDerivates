@@ -22,7 +22,5 @@ https://github.com/flovv/options
 ## Books
 -  McDonald, R. L. (2013). Derivatives Markets. (3. ed.). Pearson Education UK.
 
-## Papers
-
 ## Articles
 
