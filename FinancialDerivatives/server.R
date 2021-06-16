@@ -3,7 +3,8 @@ server <- function(input, output) {
   #--------------------------------------------------------  
   # Bloack Scholes Merton 1973
   #--------------------------------------------------------
-  # Define black scoles function
+  # Define black scholes function
+  output$bsm_theory <- renderUI({includeHTML("files/black_scholes_merton/black_scholes_merton.html")})
   BS <-  function(x) {
     S=x[1]; K=x[2]; T=x[3]; v=x[4]; rf=x[5]; dv=x[6]
     d1 = (log(S/K) + (rf-dv+0.5*v^2)*T)/(v*sqrt(T))

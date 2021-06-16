@@ -37,7 +37,9 @@ ui <- dashboardPage(
       tabItem(
         tabName = "black_scholes",
         tabsetPanel(
-          tabPanel("Theory", h2("Theory")),
+          tabPanel("Theory", 
+                   htmlOutput("bsm_theory")
+                   ),
           tabPanel(
             "App",
             sidebarPanel(
