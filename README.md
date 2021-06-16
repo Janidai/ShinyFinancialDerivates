@@ -1,6 +1,7 @@
 # About
 Financial derivates are important instruments used for hedging, speculation or reducing costs. This project provides an interactive Web Application made whith [Shiny](https://shiny.rstudio.com/) 
 
+[App Demo](https://janid.shinyapps.io/FinancialDerivatives/)
 
 # Other Projects
 https://github.com/DavZim/OptionValuation  
