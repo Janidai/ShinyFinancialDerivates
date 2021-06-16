@@ -63,7 +63,7 @@ ui <- dashboardPage(
                 )
             )
           ),
-          tabPanel("Data", h2("Data"))
+          # tabPanel("Data", h2("Data"))
         )
       )
       # # 4rd tab content
