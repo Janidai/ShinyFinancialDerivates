@@ -62,7 +62,7 @@ ui <- dashboardPage(
                     tabPanel("Puts", plotOutput("plotPut",width="100%")) 
                 )
             )
-          ),
+          )
           # tabPanel("Data", h2("Data"))
         )
       )
