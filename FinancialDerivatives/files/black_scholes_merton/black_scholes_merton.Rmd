@@ -1,0 +1,57 @@
+---
+title: "Black-Scholes Merton Model 1973"
+author: "Abdellah Janid"
+# date: "6/16/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+The Black-Scholes Formula also known as Black-Scholes-Merton Model, is a mathematical model for pricing European Options.
+
+## Call Option
+The formula for a European Call option on a stock that pays dividends at the continuous rate $\delta$ is:
+$$
+\begin{equation}
+	C(S,K,\sigma,r,T,\delta)= S e^{-\delta T} N(d_1) - K e^{-rT} N(d_2) 
+\end{equation}
+$$
+
+Where:  
+
+- $C =$ Call option price  
+- $S =$ Current stock price  
+- $K =$ Strike price of the option  
+- $r =$ risk-free interest rate (a number between 0 and 1)  
+- $\sigma =$ volatility of the stocks return (a number between 0 and 1)  
+- $T =$ time to option maturity (in years)  
+- $N =$ normal cumulative distribution function  
+- $\delta =$ The dividend yield on the stock  
+
+and:
+$$
+\begin{equation}
+	d_1= \frac{1}{\sigma \sqrt{T}} \left[\ln{\left(\frac{S}{K}\right)} + \left(r-\delta + \frac{\sigma^2}{2} \right)T \right]
+\end{equation}
+$$
+$$
+\begin{equation}
+	d_2= d_1-\sigma \sqrt{\mathrm T}
+\end{equation}
+$$
+## Put Option
+The formula for a European Put option on a stock that pays dividends at the continuous rate $\delta$, follows from put-call parity is:
+
+$$
+\begin{equation}
+	P(S,K,\sigma,r,T,\delta)= K e^{-rT} N(-d_2) - S e^{-\delta T} N(-d_1)
+\end{equation}
+$$
+
+## References
+
+[1] Black F., Scholes M.: The pricing of options and corporate liabilities. J. Political Economy 81 (1973), [637–659 DOI 10.1086/260062](https://www.journals.uchicago.edu/doi/pdf/10.1086/260062) | [Zbl 1092.91524](https://zbmath.org/?q=an:1092.91524) | [JSTOR](https://www.jstor.org/stable/3003143)
+

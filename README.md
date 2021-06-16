@@ -6,7 +6,7 @@ Financial derivates are important instruments used for hedging, speculation or r
 https://github.com/DavZim/OptionValuation  
 https://srdas.github.io/MLBook/Shiny.html  
 https://github.com/flovv/options  
-
+https://github.com/daleroberts/black-scholes  
 # References
 
 ## Books
