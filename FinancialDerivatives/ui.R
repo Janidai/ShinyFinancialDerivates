@@ -46,7 +46,18 @@ ui <- dashboardPage(
               sliderInput("riskfreerate", "Risk free rate", min = 0.0, max = 0.5, value = 0.01, step = 0.01),
               sliderInput("divrate", "Dividend rate", min = 0.0, max = 0.25, value = 0.01, step = 0.01),
             ),
-            
+            mainPanel(
+                p('Call price'),
+                textOutput("BScall"),
+                hr(),
+                p('Put price'),
+                textOutput("BSput"),
+                hr(),
+                tabsetPanel(
+                    tabPanel("Calls", plotOutput("plotCall",width="100%")), 
+                    tabPanel("Puts", plotOutput("plotPut",width="100%")) 
+                )
+            )
           ),
           tabPanel("Data", h2("Data"))
         )
